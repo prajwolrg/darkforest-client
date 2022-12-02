@@ -21,12 +21,13 @@ export function getEthConnection(): Promise<EthConnection> {
   const defaultUrl = process.env.DEFAULT_RPC as string;
 
   let url: string;
+  url = 'https://rpc.ankr.com/polygon_mumbai'
 
-  if (isProd) {
-    url = localStorage.getItem('XDAI_RPC_ENDPOINT_v5') || defaultUrl;
-  } else {
-    url = 'http://localhost:8545';
-  }
+  // if (isProd) {
+  //   url = localStorage.getItem('XDAI_RPC_ENDPOINT_v5') || defaultUrl;
+  // } else {
+  //   url = 'http://localhost:8545';
+  // }
 
   console.log(`GAME METADATA:`);
   console.log(`rpc url: ${url}`);
