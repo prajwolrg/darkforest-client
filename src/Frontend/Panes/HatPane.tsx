@@ -73,7 +73,7 @@ export function HatPane({
         </div>
         <div>
           <Sub>Current Balance</Sub>
-          <span>{balanceEth} xDAI</span>
+          <span>{balanceEth} MATIC</span>
         </div>
 
         <EmSpacer height={1} />
